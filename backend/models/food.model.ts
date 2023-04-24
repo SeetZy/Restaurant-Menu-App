@@ -4,7 +4,7 @@
  * * Library imports
  */
 // ? https://www.npmjs.com/package/mongoose
-import mongoose, { Document } from 'mongoose'
+import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema
 
@@ -23,6 +23,10 @@ const foodSchema = new Schema({
     type: String,
     require: true,
   },
+  foodPicture: {
+    data: Buffer,
+    contentType: String,
+  },
 })
 
-export const FoodModel = mongoose.model('menu', foodSchema)
+export const FoodModel = mongoose.model('menu-item', foodSchema)

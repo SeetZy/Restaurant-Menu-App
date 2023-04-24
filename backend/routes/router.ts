@@ -15,3 +15,5 @@ router.get('/', (req, res) => {
 })
 
 router.post('/add-food', foodDbFunc.addNewMenuItem)
+
+router.get('/get-menu', foodDbFunc.getMenuItems)

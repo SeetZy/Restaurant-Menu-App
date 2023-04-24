@@ -1,12 +1,14 @@
 /*
  * Library imports
  */
-import React, { ChangeEvent, useState } from 'react'
+import React, { ChangeEvent, useState, useEffect } from 'react'
 // ? https://www.npmjs.com/package/react-bootstrap
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 // ? https://www.npmjs.com/package/axios
 import axios, { AxiosError } from 'axios'
+// ? https://www.npmjs.com/package/gsap
+import { gsap } from 'gsap'
 // ? https://www.npmjs.com/package/react-toastify
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -16,6 +18,17 @@ interface FormValues {
 }
 
 function AddMenuItemsPage() {
+  document.title = 'PIEVIENOT ĒDIENUS ĒDIENKARTEI // RESTAURANT MENU APP'
+
+  useEffect(() => {
+    const tl = gsap.timeline({ default: { duration: 2.5, ease: 'expo.out' } })
+    tl.fromTo(
+      '#form',
+      { y: -50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8 }
+    )
+  }, [])
+
   const backendURL = 'http://localhost:5000/add-food'
 
   const [form, setForm] = useState<FormValues>({})
@@ -42,8 +55,6 @@ function AddMenuItemsPage() {
           progress: undefined,
           theme: 'light',
         })
-        // Sis nestrada
-        setForm({})
       })
       .catch((err: AxiosError) => {
         if (err.response!.status === 400) {
@@ -62,14 +73,15 @@ function AddMenuItemsPage() {
   }
 
   return (
-    <section className="h-auto mt-[8%] mb-[8%] w-full flex justify-center">
-      <div className="w-[30%]">
+    <section className="min-h-[50vh] w-full flex justify-center items-center bg-bg-svg bg-cover bg-no-repeat">
+      <div className=" mb-[8%] sm:w-[50vw] sm:mt-[8%] md:w-[40vw] lg:w-[30vw] min-[300px]:w-[80vw] min-[300px]:mt-[15%]">
         <Form
-          className="p-7 border-2 border-orange-500 rounded-md"
+          id="form"
+          className="m-4 bg-white p-4 rounded-xl shadow"
           onSubmit={handleSubmit}
         >
           <Form.Group className="mb-3" controlId="food">
-            <div className="text-center text-xl font-bold">
+            <div className="text-center text-xl font-bold mb-4">
               Pievienot ēdienus ēdienkartei
             </div>
             <div>
@@ -92,7 +104,7 @@ function AddMenuItemsPage() {
                 type="desc"
                 as="textarea"
                 placeholder="Apraksts"
-                rows={5}
+                rows={6}
                 name="foodDesc"
                 onChange={handleChange}
                 required
@@ -104,9 +116,10 @@ function AddMenuItemsPage() {
               <Form.Label>Cena: </Form.Label>
               <Form.Control
                 className="border-2 rounded-sm"
-                type="price"
-                placeholder="Cena"
+                type="number"
+                placeholder="Cena €"
                 name="foodPrice"
+                min={0}
                 onChange={handleChange}
                 required
               />
@@ -115,6 +128,7 @@ function AddMenuItemsPage() {
           <Form.Group className="mb-7" controlId="food">
             <div>
               <Form.Label>Pievienot attēlu: </Form.Label>
+              <Form.Control type="file" required />
             </div>
           </Form.Group>
           <Button variant="outline-success" type="submit">

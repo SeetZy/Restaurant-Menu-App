@@ -2,14 +2,53 @@ function Footer() {
   return (
     <footer className="w-full text-gray-700 bg-gray-100 body-font">
       <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-        <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-          <a className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
-            <i className="fa-sharp fa-solid fa-burger-soda"></i>
-          </a>
-          <p className="mt-2 text-sm text-gray-500">Fast & Tasty!</p>
-          <p className="text-sm text-gray-500">Follow us on:</p>
-          <div className="mt-4">
-            <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+        <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-0 md:mt-0 md:text-left">
+          <div className="w-full px-4 lg:w-1/2 md:w-1/2">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
+              Pages
+            </h2>
+            <nav className="mb-10 list-none">
+              <li className="mt-3">
+                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                  Home
+                </a>
+              </li>
+              <li className="mt-3">
+                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                  Menu
+                </a>
+              </li>
+              <li className="mt-3">
+                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                  Add Menu Items
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div className="w-full px-4 lg:w-1/2 md:w-1/2">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
+              About
+            </h2>
+            <nav className="mb-10 list-none">
+              <li className="mt-3">
+                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                  About Us
+                </a>
+              </li>
+              <li className="mt-3">
+                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                  Contact Us
+                </a>
+              </li>
+              <li className="mt-3">
+                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
+                  FAQ
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div className="w-full px-4">
+            <span className="inline-flex">
               <a className="text-gray-500 cursor-pointer hover:text-gray-700">
                 <svg
                   fill="currentColor"
@@ -67,95 +106,13 @@ function Footer() {
               </a>
             </span>
           </div>
-        </div>
-        <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
-          <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-              About
-            </h2>
-            <nav className="mb-10 list-none">
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Company
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Careers
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Blog
-                </a>
-              </li>
-            </nav>
-          </div>
-          <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-              Support
-            </h2>
-            <nav className="mb-10 list-none">
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Contact Support
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Help Resources
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Release Updates
-                </a>
-              </li>
-            </nav>
-          </div>
-          <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-              Platform
-            </h2>
-            <nav className="mb-10 list-none">
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Terms &amp; Privacy
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Pricing
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  FAQ
-                </a>
-              </li>
-            </nav>
-          </div>
-          <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-              Contact
-            </h2>
-            <nav className="mb-10 list-none">
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Send a Message
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Request a Quote
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  +371 29 999 999
-                </a>
-              </li>
-            </nav>
+          <div className="w-full px-4 lg:w-1/3 md:w-1/3">
+            <a className="px-4 text-gray-500 cursor-pointer hover:text-gray-900">
+              Terms &amp; Conditions
+            </a>
+            <a className="px-4 text-gray-500 cursor-pointer hover:text-gray-900">
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>
