@@ -7,6 +7,7 @@ function Footer() {
             <i className="fa-sharp fa-solid fa-burger-soda"></i>
           </a>
           <p className="mt-2 text-sm text-gray-500">Fast & Tasty!</p>
+          <p className="text-sm text-gray-500">Follow us on:</p>
           <div className="mt-4">
             <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
               <a className="text-gray-500 cursor-pointer hover:text-gray-700">
@@ -151,7 +152,7 @@ function Footer() {
               </li>
               <li className="mt-3">
                 <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  +123-456-7890
+                  +371 29 999 999
                 </a>
               </li>
             </nav>
