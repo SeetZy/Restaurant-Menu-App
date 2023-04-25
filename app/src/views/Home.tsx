@@ -14,6 +14,7 @@ import { gsap } from 'gsap'
  */
 import LoadingBar from '../components/LoadingBar'
 import Slider from '../components/Slider'
+import MenuItems from '../components/MenuItems'
 
 function HomePage() {
   document.title = 'MĀJAS // RESTAURANT MENU APP'
@@ -37,7 +38,7 @@ function HomePage() {
   return (
     <>
       {!isLoaded && (
-        <div className="loading-screen fixed top-0 left-0 w-full h-full flex justify-center items-center z-40 bg-bg-svg bg-cover bg-no-repeat">
+        <div className="loading-screen fixed top-0 left-0 w-full h-full flex justify-center items-center z-40 bg-white">
           <LoadingBar />
         </div>
       )}
@@ -63,7 +64,9 @@ function HomePage() {
           <Slider />
         </section>
 
-        <section className="h-[3vh]"></section>
+        <section className="h-auto pt-10 pb-10">
+          <MenuItems />
+        </section>
       </div>
     </>
   )

@@ -13,7 +13,7 @@ class FoodService {
     foodName: string,
     foodDesc: string,
     foodPrice: string,
-    foodPicture: Buffer
+    foodPicture: string
   ) {
     try {
       const addNewFood = new FoodModel({

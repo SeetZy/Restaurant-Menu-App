@@ -12,12 +12,10 @@ interface MenuItem {
   foodName: string
   foodDesc: string
   foodPrice: string
+  foodPicture: string
 }
 
 const Slider = () => {
-  const photo =
-    'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80'
-
   const backendURL = 'http://localhost:5000/get-menu'
 
   const [menuItems, setMenuItems] = useState<MenuItem[]>([])
@@ -43,7 +41,11 @@ const Slider = () => {
                     <p>Price: {item.foodPrice} €</p>
                   </div>
                   <div className="w-[40%]">
-                    <img className="block" src={photo} alt="Food item" />
+                    <img
+                      className="block"
+                      src={item.foodPicture}
+                      alt="Food item"
+                    />
                   </div>
                 </div>
               </Carousel.Item>

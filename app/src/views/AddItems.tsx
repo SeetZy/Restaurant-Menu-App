@@ -125,10 +125,19 @@ function AddMenuItemsPage() {
               />
             </div>
           </Form.Group>
-          <Form.Group className="mb-7" controlId="food">
+          <Form.Group className="mb-3" controlId="food">
             <div>
-              <Form.Label>Pievienot attēlu: </Form.Label>
-              <Form.Control type="file" required />
+              <Form.Label>Foto URL </Form.Label>
+              <Form.Control
+                className="border-2 rounded-sm"
+                type="desc"
+                as="textarea"
+                placeholder="Foto URL"
+                rows={2}
+                name="foodPicture"
+                onChange={handleChange}
+                required
+              />
             </div>
           </Form.Group>
           <Button variant="outline-success" type="submit">

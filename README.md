@@ -13,4 +13,4 @@ Lapā arī tiek parādīti pēdējie ievadītie ēdieni un saraksts ar ievadīta
 
 **Feodors Tjumins**: Lapas dizains.
 
-**Artūrs Miķelsons**: Morālais atbalsts
+**Artūrs Miķelsons**: Lapas dizaina ideja un informācijas meklēšana.

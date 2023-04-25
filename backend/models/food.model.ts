@@ -12,20 +12,18 @@ const foodSchema = new Schema({
   foodName: {
     type: String,
     require: true,
-    unique: true,
   },
   foodDesc: {
     type: String,
     require: true,
-    unique: true,
   },
   foodPrice: {
     type: String,
     require: true,
   },
   foodPicture: {
-    data: Buffer,
-    contentType: String,
+    type: String,
+    require: true,
   },
 })
 
