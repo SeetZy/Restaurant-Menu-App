@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
+        'bg-img': "url('/img/bg.png')",
         'bg-food': "url('/img/food.jpg')",
       },
       colors: {

@@ -73,7 +73,7 @@ function AddMenuItemsPage() {
   }
 
   return (
-    <section className="min-h-[50vh] w-full flex justify-center items-center">
+    <section className="min-h-[50vh] w-full flex justify-center items-center bg-bg-img bg-cover bg-no-repeat">
       <div className=" mb-[8%] sm:w-[50vw] sm:mt-[8%] md:w-[40vw] lg:w-[30vw] min-[300px]:w-[80vw] min-[300px]:mt-[15%]">
         <Form
           id="form"

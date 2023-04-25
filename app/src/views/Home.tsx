@@ -65,6 +65,9 @@ function HomePage() {
         </section>
 
         <section className="h-auto pt-10 pb-10">
+          <p className="text-center text-3xl font-bold mb-[3vh]">
+            Visi mūsu ēdieni
+          </p>
           <MenuItems />
         </section>
       </div>
