@@ -9,25 +9,27 @@ import Navbar from 'react-bootstrap/Navbar'
 function NavigationBar() {
   return (
     <Navbar
-      className="shadow"
+      className="shadow bg-navbarfooter"
       collapseOnSelect
       expand="lg"
-      bg="light"
-      variant="light"
+      variant="dark"
       fixed="top"
     >
       <Container>
         <Navbar.Brand href="/">
-          <i className="fa-solid fa-utensils mr-2"></i>
+          <i className="fa-sharp fa-solid fa-egg mr-2"></i>
           Restaurant-Menu-App
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link href="/">Mājas</Nav.Link>
-            <Nav.Link href="/menu">Ēdienkarte</Nav.Link>
-            <Nav.Link href="/add-menu-items">Pievienot ēdienus</Nav.Link>
+            <Nav.Link href="/" className="text-white">
+              Mājas
+            </Nav.Link>
+            <Nav.Link href="/add-menu-items" className="text-white">
+              Pievienot ēdienus
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

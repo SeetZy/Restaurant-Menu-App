@@ -12,7 +12,6 @@ import NavigationBar from './components/Navbar.tsx'
 
 import ErrorPage from './views/Error.tsx'
 import HomePage from './views/Home'
-import MenuPage from './views/Menu.tsx'
 import AddMenuItemsPage from './views/AddItems'
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
         <Routes>
           <Route path="*" element={<ErrorPage />} />
           <Route path="/" element={<HomePage />} />
-          <Route path="/menu" element={<MenuPage />} />
           <Route path="/add-menu-items" element={<AddMenuItemsPage />} />
         </Routes>
       </div>

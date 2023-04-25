@@ -4,8 +4,11 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-svg': "url('/img/bg.png')",
-        'bg-food':"url('/img/food.jpg')"
+        'bg-food': "url('/img/food.jpg')",
+      },
+      colors: {
+        navbarfooter: '#533232',
+        main: '#704343',
       },
     },
   },

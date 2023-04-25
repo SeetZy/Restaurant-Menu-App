@@ -1,55 +1,33 @@
 function Footer() {
   return (
-    <footer className="w-full text-gray-700 bg-gray-100 body-font">
-      <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+    <footer className="w-full bg-navbarfooter body-font">
+      <div className="container flex flex-col flex-wrap px-5 py-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
         <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-0 md:mt-0 md:text-left">
-          <div className="w-full px-4 lg:w-1/2 md:w-1/2">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-              Pages
-            </h2>
-            <nav className="mb-10 list-none">
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Home
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Menu
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Add Menu Items
-                </a>
-              </li>
-            </nav>
-          </div>
-          <div className="w-full px-4 lg:w-1/2 md:w-1/2">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-              About
-            </h2>
-            <nav className="mb-10 list-none">
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  About Us
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  Contact Us
-                </a>
-              </li>
-              <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                  FAQ
-                </a>
-              </li>
-            </nav>
-          </div>
           <div className="w-full px-4">
+            <h2 className="mb-3 text-xl font-medium tracking-widest text-gray-200 uppercase title-font">
+              Informācija
+            </h2>
+            <nav className="mb-10 list-none">
+              <li className="mt-3">
+                <a className="text-white  cursor-pointer hover:text-gray-100">
+                  Par Mums
+                </a>
+              </li>
+              <li className="mt-3">
+                <a className="text-white cursor-pointer hover:text-gray-100">
+                  Kontaktinformācija
+                </a>
+              </li>
+              <li className="mt-3">
+                <a className="text-white  cursor-pointer hover:text-gray-100">
+                  Bieži Uzdotie Jautājumi
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div className="w-full px-4 mb-4">
             <span className="inline-flex">
-              <a className="text-gray-500 cursor-pointer hover:text-gray-700">
+              <a className="text-white  cursor-pointer hover:text-gray-100">
                 <svg
                   fill="currentColor"
                   strokeLinecap="round"
@@ -61,7 +39,7 @@ function Footer() {
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+              <a className="ml-3 text-white  cursor-pointer hover:text-gray-100">
                 <svg
                   fill="currentColor"
                   strokeLinecap="round"
@@ -73,7 +51,7 @@ function Footer() {
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+              <a className="ml-3 text-white  cursor-pointer hover:text-gray-100">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -87,7 +65,7 @@ function Footer() {
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+              <a className="ml-3 text-white  cursor-pointer hover:text-gray-100">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
@@ -106,19 +84,11 @@ function Footer() {
               </a>
             </span>
           </div>
-          <div className="w-full px-4 lg:w-1/3 md:w-1/3">
-            <a className="px-4 text-gray-500 cursor-pointer hover:text-gray-900">
-              Terms &amp; Conditions
-            </a>
-            <a className="px-4 text-gray-500 cursor-pointer hover:text-gray-900">
-              Privacy Policy
-            </a>
-          </div>
         </div>
       </div>
-      <div className="bg-gray-300">
-        <div className="container px-5 py-4 mx-auto">
-          <p className="text-sm text-gray-700 capitalize xl:text-center">
+      <div className="bg-gray-700">
+        <div className="container px-5 pb-2 pt-3 mx-auto">
+          <p className="text-sm text-gray-200 capitalize text-center">
             © 2023 All rights reserved{' '}
           </p>
         </div>
