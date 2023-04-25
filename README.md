@@ -7,14 +7,14 @@ Lapā arī tiek parādīti pēdējie ievadītie ēdieni un saraksts ar ievadīta
 
 ## Rīgas Valsts vācu ģimnāzijas skolēni:
 
-**Patriks Raiss-Reiss**: Projekta vadītājs, galvenais programmētājs (Front-end & Back-end).
+**Patriks Raiss-Reiss**: Projekta vadītājs, galvenais programmētājs (Front-end & Back-end). <br/>
 Github username: SeetZy
 
-**Olivers Nils Robs**: Lapas dizains, Front-end.
+**Olivers Nils Robs**: Lapas dizains, Front-end. <br/>
 Github username: ONRobs
 
-**Feodors Tjumins**: Lapas dizains.
+**Feodors Tjumins**: Lapas dizains. <br/>
 Github username: FTyumin
 
-**Artūrs Miķelsons**: Lapas dizaina ideja un informācijas meklēšana.
+**Artūrs Miķelsons**: Lapas dizaina ideja un informācijas meklēšana. <br/>
 Github username: Archy04
