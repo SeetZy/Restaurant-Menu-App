@@ -63,7 +63,7 @@ function HomePage() {
           <Slider />
         </section>
 
-        <section className="h-[70vh]"></section>
+        <section className="h-[3vh]"></section>
       </div>
     </>
   )

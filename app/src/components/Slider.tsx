@@ -33,7 +33,7 @@ const Slider = () => {
       <div className="w-[70%] h-auto bg-gray-200 rounded-2xl shadow 2xl:w-[60%]">
         <div className="flex m-4 bg-gray-100 rounded-2xl">
           <Carousel variant={'dark'} controls={false}>
-            {menuItems.map((item) => (
+            {menuItems.slice(-4).map((item) => (
               <Carousel.Item className="mb-4" key={item._id}>
                 <div className="flex">
                   <div className="w-[60%] ml-[4%] mt-[3%]">
