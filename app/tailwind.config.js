@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         'bg-svg': "url('/img/bg.png')",
+        'bg-food':"url('/img/food.jpg')"
       },
     },
   },

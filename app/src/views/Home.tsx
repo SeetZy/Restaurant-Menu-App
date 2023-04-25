@@ -9,7 +9,7 @@ function HomePage() {
 
   return (
     <div className="h-auto bg-bg-svg bg-cover bg-no-repeat">
-      <section className="h-screen w-full flex justify-center items-center">
+      <section className="h-[70vh] w-full flex justify-center items-center bg-bg-food bg-cover bg-no-repeat">
         <div>Home Page</div>
       </section>
       <section className="h-90vh">
